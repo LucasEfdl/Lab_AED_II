@@ -54,7 +54,7 @@ int diasDeAula(Data primeiraData){
 int main(){
     Data dataDeHoje;
     int totalDeAulas = 0;
-    printf("Infome a data da ultima aula de AEDII (00/00/0000):\n");
+    printf("Infome a data da ultima aula de LAEDII (00/00/0000):\n");
     scanf("%d %d %d", &dataDeHoje.dia, &dataDeHoje.mes, &dataDeHoje.ano);
 
     totalDeAulas = diasDeAula(dataDeHoje);
