@@ -9,7 +9,7 @@ typedef struct data{
 Data ultimaData = {23,10,2023};
 
 int diasDeAula(Data primeiraData){
-    int totalDeAulas = 0;
+    int totalDeAulas = -2;
 
     if((primeiraData.mes == 6) && (primeiraData.dia <= 25)){
             printf("\nO semestre 2023.1 não começou!\n");
