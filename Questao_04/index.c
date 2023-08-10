@@ -6,14 +6,40 @@ esta funcao em um programa que determina e imprime todos os numeros perfeitos en
 Imprima os fatores de cada numero perfeito para confirmar que o numero e realmente perfeito.
 */
 
-void isPefect(int num){
-    for (int i = 0; i < num; i++)
+#include<stdio.h>
+
+int isPerfect(int num){
+    int sum = 0;
+    for (int i = 1; i < num; i++)
     {
-        
+        if(num % i == 0){
+            sum += i;
+        }
     }
-    
+
+    return sum;
+}
+
+void imprime(int num){
+    for (int i = 1; i < num; i++)
+    {
+        if(num % i == 0){
+            printf("%d + ", i);
+        }
+    }
+
+    printf("= %d\n", num);
 }
 
 int main(){
-    isPefect(1000)
+    int sum;
+    for (int i = 1; i < 1000; i++)
+    {
+        sum = isPerfect(i);
+
+        if(sum == i){
+            imprime(i);
+        }
+    }
+    
 }
